@@ -1,0 +1,47 @@
+XTerm*selectToClipboard: true
+
+! === Colours ===
+
+! main
+*.cursorColor:  #ffffff
+*background:    #5d729f
+*foreground:    #ffffff
+
+*.color0: #1E2127
+*.color8: #5C6370
+*.color1: #CC626A
+*.color9: #E06C75
+*.color2: #98C379
+*.color10: #A7D685
+*.color3:  #da8548
+*.color11: #ECBE7B
+*.color4: #3E86B8
+*.color12: #51afef
+*.color5: #a9a1e1
+*.color13: #C678DD
+*.color6: #4db5bd
+*.color14: #56B6C2
+*.color7: #ABB2BF
+*.color15: #FFFFFF
+
+xterm*background: black
+xterm*foreground: lightgray
+xterm*faceName: Ubuntu Mono derivative Powerline
+xterm*faceSize: 9
+xterm*ScrollBar: true
+xterm*rightScrollBar: true
+XTerm.vt100.selectToClipboard: true
+XTerm*VT100.Translations: #override \
+      Shift Ctrl<Key>V: insert-selection(CLIPBOARD) \n\
+      Shift Ctrl<Key>V: insert-selection(PRIMARY) \n\
+      Shift<Btn1Down>: select-start() \n\
+      Shift<Btn1Motion>: select-extend() \n\
+      Shift<Btn1Up>: select-end(CLIPBOARD) \n\
+      Shift<Key>Up: scroll-back(1,line) \n\
+      Shift<Key>Down: scroll-forw(1,line) \n\
+      Shift Ctrl<Key>C: copy-selection(PRIMARY) \n\
+      Shift <Key>Home:    copy-selection(PRIMARY) \n\
+      Ctrl <Key> +:       larger-vt-font() \n\
+      Ctrl <Key> -:       smaller-vt-font()
+!XTerm*selectToClipboard: true       
+!Shift Ctrl<Key>C: copy-selection(CLIPBOARD)

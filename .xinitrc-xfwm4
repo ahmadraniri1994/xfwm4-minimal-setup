@@ -1,0 +1,6 @@
+xrdb -merge ~/.Xresources
+#exec startlxqt
+#startxfce4
+sxhkd &
+xterm &
+exec xfwm4

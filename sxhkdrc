@@ -1,0 +1,14 @@
+# Reload functions
+super + Escape
+	"$XDG_CONFIG_HOME"/sxhkd/functions
+super + t
+	"xterm"
+super + r
+	"dmenu_run"
+
+XF86AudioRaiseVolume 
+	"/home/ahmad/bin/volup"
+XF86AudioLowerVolume 
+	"/home/ahmad/bin/voldown"
+XF86AudioMute
+	"/home/ahmad/bin/volmu"
